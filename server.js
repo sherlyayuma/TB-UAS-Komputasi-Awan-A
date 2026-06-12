@@ -291,7 +291,12 @@ app.delete("/kuliner-umkm/:id", async (req, res) => {
 // =======================
 app.get("/", (req, res) => {
   res.json({
-    message: "Kuliner UMKM API Running",
+    status: "success",
+    message: "API kuliner UMKM running successfully",
+    student: {
+      name: "Sherly Ayuma Putri",
+      nim: "2311521018",
+    },
   });
 });
 
